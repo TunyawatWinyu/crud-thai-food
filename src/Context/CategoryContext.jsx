@@ -78,6 +78,9 @@ export default function CategoryProvider({ children }) {
             style={{ color: "#03ca56", marginRight: "5px" }}
           />
         );
+
+      default:
+        return null;
     }
   };
   return (

@@ -13,7 +13,6 @@ import {
 import Category from "../../Components/Food Category/Category";
 import "./Home.css";
 import { useCategory } from "../../Context/CategoryContext";
-import dishes from "../../Data/DishData";
 import EditDrawer from "../../Components/EditDrawer/EditDrawer";
 import { useState } from "react";
 import { Link } from "react-router-dom";
