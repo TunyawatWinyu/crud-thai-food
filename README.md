@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# 🍽️ Restaurant Menu Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern restaurant menu management dashboard built with React.  
+This project allows users to manage dishes, categories, availability, dietary options, and spicy levels through a clean and intuitive interface.
 
-## Available Scripts
+## 🚀 Demo
 
-In the project directory, you can run:
+Live Demo: https://your-project-link.netlify.app
 
-### `npm start`
+## 📸 Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+(Add your screenshots here)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+- ✅ View all dishes in a responsive grid layout
+- ✅ Add new dishes
+- ✅ Edit existing dishes
+- ✅ Delete dishes
+- ✅ Search dishes by name or description
+- ✅ Filter dishes by category
+- ✅ Manage dish availability status
+- ✅ Vegetarian badge system
+- ✅ Spicy level indicators
+- ✅ Upload and display dish images
+- ✅ Dynamic category management
+- ✅ Responsive design for different screen sizes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Technologies Used
 
-### `npm run build`
+- React.js
+- JavaScript (ES6+)
+- CSS3
+- React Router
+- Context API
+- Font Awesome Icons
+- Vite
+- Git & GitHub
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+src/
+│
+├── Components/
+│ ├── DishCard/
+│ ├── AddDish/
+│ ├── EditDish/
+│ └── Navbar/
+│
+├── Context/
+│ ├── DishContext.jsx
+│ └── CategoryContext.jsx
+│
+├── Data/
+│ └── dishes.js
+│
+├── Pages/
+│
+├── App.jsx
+└── main.jsx
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ⚙️ Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clone the repository:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
+git clone https://github.com/yourusername/restaurant-menu-management.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Navigate into the project folder:
 
-## Learn More
+cd restaurant-menu-management
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Install dependencies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm install
 
-### Code Splitting
+Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm run dev
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+🧩 Main Concepts Practiced
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project was created to improve my frontend development skills, focusing on:
 
-### Advanced Configuration
+React component architecture
+State management with Context API
+Reusable components
+Form handling
+Conditional rendering
+Dynamic filtering
+CRUD operations
+Responsive UI development
+📌 Future Improvements
+🔹 Connect with a backend API
+🔹 Add user authentication
+🔹 Add database integration
+🔹 Add image storage service
+🔹 Add dashboard analytics
+🔹 Add order management system
+👨‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Tunyawat Winyu
