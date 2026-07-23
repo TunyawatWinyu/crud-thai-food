@@ -1,0 +1,33 @@
+.main_category_saction {
+  border-bottom: solid 1px rgb(206, 206, 206);
+}
+
+.category_section {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 40px;
+}
+
+.category button {
+  margin: 10px 5px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: solid 1px rgb(206, 206, 206);
+  background-color: white;
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.active button {
+  margin: 10px 5px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: solid 1px rgb(206, 206, 206);
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+}

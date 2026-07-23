@@ -1,0 +1,307 @@
+header {
+  background-color: black;
+  padding: 60px 0;
+}
+
+.restaurant-container {
+  width: 60%;
+  color: white;
+}
+
+.restaurant-brand {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.restaurant-logo {
+  padding: 12px 10px;
+  border: rgb(255, 212, 59) solid 1px;
+  border-radius: 200px;
+  margin-left: 30px;
+  background-color: rgba(255, 213, 59, 0.242);
+}
+
+.restaurant-name {
+  margin-left: 30px;
+}
+
+.restaurant-description {
+  margin-left: 30px;
+}
+
+.restaurant-badge {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  color: white;
+}
+
+.dish_on_menu,
+.available_menu {
+  display: flex;
+  justify-content: center;
+  margin: 0 10px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.find {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px;
+}
+
+.search-container input {
+  padding-left: 40px;
+  height: 40px;
+  width: 250px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  color: rgb(215, 215, 215);
+}
+
+.addBtn {
+  padding: 10px 20px;
+  background-color: #fa7006;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addBtn:hover {
+  background-color: #d15b00;
+}
+
+.dishes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 20px;
+  gap: 15px;
+}
+
+/* Card */
+.dish_card {
+  width: 400px;
+  padding-bottom: 20px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.dish_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* IMMAGINE */
+.dish_image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.dish_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BADGE PICCANTE */
+.spicy,
+.available {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+
+  padding: 5px 10px 5px 5px;
+  border-radius: 20px;
+
+  background-color: white;
+  font-size: 12px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+}
+
+.available {
+  top: 45px; /* sotto lo spicy */
+}
+
+.available.available {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.available.not_available {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Piccante forte */
+.spicy.Hot {
+  color: red;
+}
+
+/* Piccante medio */
+.spicy.Medium {
+  color: orange;
+}
+
+/* Poco piccante */
+.spicy.Low {
+  color: green;
+}
+
+/* Non piccante */
+.spicy.Not-Spicy {
+  color: gray;
+}
+
+/* Vegetarian */
+.vegetarian {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  padding: 5px 10px 5px 5px;
+  border-radius: 20px;
+
+  background-color: white;
+  font-size: 12px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  color: #16a34a;
+}
+
+/* CONTENUTO */
+.dish_content {
+  padding: 20px;
+}
+
+.dish_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.dish_header h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #222;
+}
+
+.dish_header strong {
+  font-size: 18px;
+  color: #d35400;
+}
+
+.dish_content span {
+  display: inline-block;
+  margin-bottom: 12px;
+
+  font-size: 13px;
+  color: #888;
+
+  background-color: #f5f5f5;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.description {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+
+  height: 72px; /* circa 3 righe */
+  overflow: hidden;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  line-height: 24px;
+}
+
+.dish_actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn_edit,
+.btn_delete {
+  text-decoration: none;
+  color: black;
+  background: none;
+  border: none;
+  padding: 10px 60px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition:
+    background-color 0.3s ease,
+    color 0.1s ease;
+}
+
+.edit_icon,
+.delete_icon {
+  margin: 0 5px;
+  color: black;
+  transition: color 0.1s ease;
+}
+
+.btn_edit:hover .edit_icon {
+  color: rgb(132, 95, 0);
+}
+
+.btn_delete:hover .delete_icon {
+  color: rgb(159, 1, 1);
+}
+
+.btn_edit:hover {
+  background-color: rgba(255, 183, 0, 0.1);
+  color: rgb(132, 95, 0);
+}
+
+.btn_delete:hover {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: rgb(159, 1, 1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .dish_card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,274 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 130px;
+  height: 35px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background-color: #ddd;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  transition: 0.3s;
+}
+
+.text {
+  font-size: 14px;
+  color: #555;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  left: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+/* quando è attivo */
+.switch input:checked + .slider {
+  background-color: #4caf50;
+  padding-left: 15px;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(95px);
+}
+
+.switch input:checked + .slider .text {
+  color: white;
+}
+
+.drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.edit-drawer {
+  width: 450px;
+  height: 100vh;
+  background-color: white;
+
+  overflow-y: auto;
+
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.15);
+
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.edit-drawer-header {
+  border-bottom: solid 1px #ddd;
+}
+
+.edit-drawer-title {
+  position: relative;
+  padding: 20px;
+}
+
+.edit-drawer-title h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.edit-drawer-title span {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.edit-drawer-close {
+  position: absolute;
+  top: 40px;
+  left: 400px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+form {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label */
+.edit-drawer-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input e Select */
+.edit-drawer-form input:not(.image-upload),
+textarea,
+.edit-drawer-form select {
+  width: 100%;
+  height: 45px;
+
+  padding: 0 5px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  background-color: #fff;
+
+  font-size: 0.95rem;
+  color: #333;
+
+  outline: none;
+
+  transition: all 0.2s ease;
+}
+
+textarea {
+  padding: 10px 0;
+}
+
+.image-upload {
+  width: 100%;
+  height: 45px;
+
+  padding: 8px 10px;
+  border-radius: 10px;
+
+  background-color: #fff;
+
+  font-size: 0.95rem;
+  color: #333;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+/* bottone interno del file input */
+.image-upload::file-selector-button {
+  height: 30px;
+
+  padding: 0 15px;
+
+  margin-right: 10px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: rgb(236, 123, 31);
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+.image-upload::file-selector-button:hover {
+  background-color: rgb(197, 103, 26);
+}
+
+/* quando clicchi */
+.image-upload:focus {
+  border-color: rgb(255, 212, 59);
+
+  box-shadow: 0 0 0 3px rgba(255, 212, 59, 0.2);
+
+  outline: none;
+}
+
+/* Effetto quando clicchi dentro */
+.edit-drawer-form input:focus,
+.edit-drawer-form select:focus {
+  border-color: rgb(255, 212, 59);
+
+  box-shadow: 0 0 0 3px rgba(255, 212, 59, 0.2);
+}
+
+/* Placeholder */
+.edit-drawer-form input::placeholder {
+  color: #aaa;
+}
+.edit-drawer-row,
+.edit-drawer-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn-update {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 60px 0 60px;
+
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(236, 123, 31);
+  color: #fff;
+
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-update:hover {
+  background-color: rgb(197, 103, 26);
+}
+
+.btn-cancel {
+  padding: 10px 20px;
+
+  border-radius: 10px;
+  border: solid 1px #ddd;
+  background-color: #fff;
+
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cancel:hover {
+  background-color: #e9e9e9;
+}
