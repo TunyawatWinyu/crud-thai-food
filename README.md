@@ -37,8 +37,81 @@ Live Demo: https://your-project-link.netlify.app
 - React Router
 - Context API
 - Font Awesome Icons
-- Vite
 - Git & GitHub
 
 ## 📂 Project Structure
+
+src/
+│
+├── Components/
+│ ├── DishCard/
+│ ├── AddDish/
+│ ├── EditDish/
+│ └── Navbar/
+│
+├── Context/
+│ ├── DishContext.jsx
+│ └── CategoryContext.jsx
+│
+├── Data/
+│ └── dishes.js
+│
+├── Pages/
+│
+├── App.jsx
+└── main.jsx
+
+
+
+## ⚙️ Installation
+
+Clone the repository:
+
+bash
+
+git clone https://github.com/yourusername/restaurant-menu-management.git
+
+
+Navigate into the project folder:
+
+1. cd restaurant-menu-management
+
+2. Install dependencies:
+
+3. npm install
+
+Start the development server:
+
+1. npm run dev
+
+
+
+🧩 Main Concepts Practiced
+
+This project was created to improve my frontend development skills, focusing on:
+
+React component architecture
+State management with Context API
+Reusable components
+Form handling
+Conditional rendering
+Dynamic filtering
+CRUD operations
+Responsive UI development
+📌 Future Improvements
+🔹 Connect with a backend API
+🔹 Add user authentication
+🔹 Add database integration
+🔹 Add image storage service
+🔹 Add dashboard analytics
+🔹 Add order management system
+
+
+
+👨‍💻 Author
+
+Tunyawat Winyu
+
+
+
 
